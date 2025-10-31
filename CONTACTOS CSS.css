@@ -1,0 +1,152 @@
+body {
+    margin: 0;
+    font-family: "Poppins", sans-serif;
+    background-color: #f0f6f9;
+    color: #222;
+}
+
+/* ENCABEZADO */
+.encabezado {
+    position: relative;
+    text-align: center;
+    color: rgb(27, 26, 26);
+}
+
+.imagen-encabezado {
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+    filter: brightness(55%);
+}
+
+.texto-encabezado {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.texto-encabezado h1 {
+    font-size: 2em;
+    margin: 0;
+}
+
+.texto-encabezado p {
+    font-size: 1.1em;
+}
+
+/* MENÚ */
+.menu {
+    background-color: #264653;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.menu a {
+    color: white;
+    padding: 15px 20px;
+    text-decoration: none;
+    transition: background-color 0.3s;
+}
+
+.menu a:hover {
+    background-color: #2a9d8f;
+}
+
+.menu .activo {
+    background-color: #2a9d8f;
+}
+
+/* CONTENIDO */
+.contenido {
+    max-width: 800px;
+    margin: auto;
+    padding: 40px 20px;
+}
+
+h2 {
+    text-align: center;
+    color: #264653;
+    margin-bottom: 30px;
+}
+
+/* FORMULARIO */
+.formulario {
+    background-color: white;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+    margin-bottom: 40px;
+}
+
+.formulario label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: 600;
+}
+
+.formulario input,
+.formulario textarea {
+    width: 100%;
+    padding: 12px;
+    margin-bottom: 20px;
+    border-radius: 6px;
+    border: 1px solid #ccc;
+    transition: border-color 0.3s;
+}
+
+.formulario input:focus,
+.formulario textarea:focus {
+    border-color: #2a9d8f;
+    outline: none;
+}
+
+.formulario button {
+    background-color: #2a9d8f;
+    color: white;
+    padding: 12px 25px;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 1em;
+    transition: background-color 0.3s, transform 0.2s;
+}
+
+.formulario button:hover {
+    background-color: #3ec1ac;
+    transform: scale(1.05);
+}
+
+/* INFORMACIÓN DE CONTACTO */
+.info-contacto {
+    background-color: white;
+    padding: 25px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+    text-align: center;
+}
+
+.info-contacto h3 {
+    color: #2a9d8f;
+}
+
+/* PIE */
+.pie {
+    background-color: #264653;
+    color: white;
+    text-align: center;
+    padding: 15px;
+    margin-top: 40px;
+}
+
+/* MÓVIL */
+@media (max-width: 768px) {
+    .contenido {
+        padding: 20px;
+    }
+
+    .texto-encabezado h1 {
+        font-size: 1.5em;
+    }
+}
